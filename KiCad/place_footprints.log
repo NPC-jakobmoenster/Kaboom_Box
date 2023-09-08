@@ -1,0 +1,22 @@
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 641:Plugin executed on: 'win32'
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 642:Plugin executed with python version: '3.9.16 (main, Aug  8 2023, 05:38:28) [MSC v.1936 64 bit (AMD64)]'
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 643:KiCad build version: 7.0.7
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 644:Plugin version: 2.1.2
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 645:Frame repr: <wx._core.Frame object at 0x000002964D672790>
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P104 on root level
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P101 on root level
+09-07 21:51:40 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P106 on root level
+09-07 21:51:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P105 on root level
+09-07 21:51:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P103 on root level
+09-07 21:51:41 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint P102 on root level
+09-07 21:51:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 824:Reference designator is: U
+09-07 21:51:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 825:Reference number is: 172
+09-07 21:51:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 857:Sorted and filtered list:
+['U144', 'U145', 'U146', 'U147', 'U148', 'U149', 'U150', 'U151', 'U152', 'U153', 'U154', 'U155', 'U156', 'U157', 'U158', 'U159', 'U160', 'U161', 'U162', 'U163', 'U164', 'U165', 'U166', 'U167', 'U168', 'U169', 'U170', 'U171', 'U172', 'U173', 'U174', 'U175', 'U176', 'U177', 'U178']
+09-07 21:51:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 358:wx.Colour(240, 240, 240, 255)
+09-07 21:51:54 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 489:'14'
+09-07 21:51:54 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 895:Footprints to place:
+['U150', 'U151', 'U152', 'U153', 'U154', 'U155', 'U156', 'U157', 'U158', 'U159', 'U160', 'U161', 'U162', 'U163', 'U164', 'U165', 'U166', 'U167', 'U168', 'U169', 'U170', 'U171', 'U172', 'U173', 'U174', 'U175', 'U176', 'U177', 'U178']
+09-07 21:51:54 com_github_MitjaNemec_PlaceFootprints.place_footprints 398:Starting placing with matrix layout
+09-07 21:51:54 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 965:Placing complete
