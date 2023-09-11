@@ -7,7 +7,7 @@
     "hidden_nets": [
       "GND"
     ],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -70,7 +70,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Fun_Box.kicad_prl",
+    "filename": "Kaboom_box.kicad_prl",
     "version": 3
   },
   "project": {

@@ -1849,6 +1849,10 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 7ac469fb-8b7c-4c19-9f8b-2b7a974568f9)
   )
+  (hierarchical_label "+3.3V" (shape input) (at 96.52 113.03 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 800cb8ff-5fca-4f3e-88d6-59134db3e58f)
+  )
   (hierarchical_label "VDD" (shape input) (at 59.69 39.37 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 814391db-ccb6-4f69-b09b-b83b588c6196)
@@ -2904,8 +2908,8 @@
     (pin "2" (uuid c8435a5e-9d7e-4a0d-865f-c8fb933e5a2b))
     (pin "3" (uuid 90512df1-ecfb-4ed1-8ffc-e876440f4c2e))
     (pin "4" (uuid 3568ab50-2c9c-4b34-871c-4aae14fc7f63))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103854))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103854))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103855))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103855))
     (instances
       (project "Kaboom_box"
         (path "/8d340784-229e-46d1-990c-7f8852f9fc49"
