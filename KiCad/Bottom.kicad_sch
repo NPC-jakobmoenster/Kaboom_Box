@@ -2790,7 +2790,7 @@
     (property "Value" "RaspberryPi_Pico" (at 121.5741 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Module_RaspberryPi_Pico:RaspberryPi_Pico_Original_SMD_Castellated_HandSolder" (at 119.38 154.94 0)
+    (property "Footprint" "Module_RaspberryPi_Pico:RaspberryPi_Pico_Common_No_Keepout" (at 119.38 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" (at 119.38 157.48 0)
@@ -2908,8 +2908,8 @@
     (pin "2" (uuid c8435a5e-9d7e-4a0d-865f-c8fb933e5a2b))
     (pin "3" (uuid 90512df1-ecfb-4ed1-8ffc-e876440f4c2e))
     (pin "4" (uuid 3568ab50-2c9c-4b34-871c-4aae14fc7f63))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103856))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103856))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103859))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb103859))
     (instances
       (project "Kaboom_box"
         (path "/8d340784-229e-46d1-990c-7f8852f9fc49"
