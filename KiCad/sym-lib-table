@@ -29,4 +29,5 @@
   (lib (name "0603B152K500NT")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/0603B152K500NT.kicad_sym")(options "")(descr ""))
   (lib (name "0603WAF100JT5E")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/0603WAF100JT5E.kicad_sym")(options "")(descr ""))
   (lib (name "CC0603KRX7R9BB104")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/CC0603KRX7R9BB104.kicad_sym")(options "")(descr ""))
+  (lib (name "RVT0J102M0810")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/RVT0J102M0810.kicad_sym")(options "")(descr ""))
 )
