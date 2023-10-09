@@ -1,0 +1,27 @@
+Drill report for Kaboom_box_top.kicad_pcb
+Created on Mon Oct  9 21:47:46 2023
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Kaboom_box_top.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (209 holes)
+    T2  1.000mm  0.0394"  (30 holes)
+    T3  1.050mm  0.0413"  (4 holes)
+    T4  4.100mm  0.1614"  (29 holes)
+
+    Total plated holes count 272
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T5  3.000mm  0.1181"  (4 holes)
+    T6  4.300mm  0.1693"  (4 holes)
+
+    Total unplated holes count 8

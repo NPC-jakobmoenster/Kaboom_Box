@@ -2516,7 +2516,7 @@
   )
 
   (symbol (lib_id "0805W8F0000T5E:0805W8F0000T5E") (at 267.97 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 9e9cd3f8-ccd7-4a99-bb2a-00f73d7e2aa2)
     (property "Reference" "R?" (at 267.97 59.69 0)
       (effects (font (size 1.27 1.27)))
@@ -2963,7 +2963,7 @@
   )
 
   (symbol (lib_id "0805W8F0000T5E:0805W8F0000T5E") (at 267.97 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid ebe0f1a8-26ed-4526-82f8-34e71196a7d1)
     (property "Reference" "R?" (at 267.97 69.85 0)
       (effects (font (size 1.27 1.27)))
@@ -3019,8 +3019,8 @@
     (pin "2" (uuid c8435a5e-9d7e-4a0d-865f-c8fb933e5a2b))
     (pin "3" (uuid 90512df1-ecfb-4ed1-8ffc-e876440f4c2e))
     (pin "4" (uuid 3568ab50-2c9c-4b34-871c-4aae14fc7f63))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb10385a))
-    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb10385a))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb10385e))
+    (pin "5" (uuid 1cdcb74a-b770-475e-a6d8-fddcbb10385e))
     (instances
       (project "Kaboom_box"
         (path "/8d340784-229e-46d1-990c-7f8852f9fc49"
