@@ -31,4 +31,8 @@
   (lib (name "CC0603KRX7R9BB104")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/CC0603KRX7R9BB104.kicad_sym")(options "")(descr ""))
   (lib (name "RVT0J102M0810")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/RVT0J102M0810.kicad_sym")(options "")(descr ""))
   (lib (name "MT-0-103-F001-T000-RS+PJ")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/MT-0-103-F001-T000-RS+PJ.kicad_sym")(options "")(descr ""))
+  (lib (name "74HC14D,653")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/74HC14D,653.kicad_sym")(options "")(descr ""))
+  (lib (name "0805W8F2000T5E")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/0805W8F2000T5E.kicad_sym")(options "")(descr ""))
+  (lib (name "0603WAF1202T5E")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/0603WAF1202T5E.kicad_sym")(options "")(descr ""))
+  (lib (name "1206W4F1000T5E")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/1206W4F1000T5E.kicad_sym")(options "")(descr ""))
 )

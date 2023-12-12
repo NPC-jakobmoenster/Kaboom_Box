@@ -1,4 +1,4 @@
-23148300618125201
+23151717418864057
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66030,6 +66030,13 @@ Cherry MX Keyboard Stabilizer 8.00u 9.00u 10.00u Cutout
 0
 0
 0
+PCM_Mounting_Keyboard_Stabilizer
+Stabilizer_Cherry_MX_Single
+Cherry MX PCB Stabilizer 2.00u 2.25u 2.50u 2.75u
+Cherry MX Keyboard Stabilizer 2.00u 2.25u 2.50u 2.75u Cutout
+0
+0
+0
 PCM_Switch_Keyboard_Alps_Matias
 SW_Alps_Matias
 Alps/Matias keyswitch
@@ -95703,6 +95710,13 @@ SOD-323_L1.8-W1.3-LS2.5-RD footprint
 0
 2
 2
+footprint
+SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL
+SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL footprint
+SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL footprint
+0
+14
+14
 footprint
 SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL
 SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL footprint
