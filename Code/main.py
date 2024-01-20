@@ -5,8 +5,21 @@ import random
 import sys
 import ssd1306
 from rotary_irq_rp2 import RotaryIRQ
+from writer import Writer
+import _thread
+
+# Font
+import arial_50
+
 
 # Global variables
+WIDTH = const(128)
+HEIGHT = const(64)
+
+clockYOffset = const(14)
+clockXOffset = const(10)
+
+clockMaxWidth = const(111)
 
 # colors in RGB
 RED     = (20,0,0)
@@ -31,8 +44,8 @@ letters = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
 letterOutBuffer=bytearray(4)    # buffer to hold the output letter information to write on SPI
 letterInBuffer=bytearray(4)     # buffer to hold the output letter information to write on SPI
 
-levelMultiplier = 2         # number of letters per level
-timeLeftReset = 60          # initial/reset timer
+levelMultiplier = 1         # number of letters per level
+timeLeftReset = 10          # initial/reset timer
 timeLeft = timeLeftReset    # seconds until the "bomb" goes off.
 running = False             # Flag for handling if the bomb is started or not.
 
@@ -53,10 +66,12 @@ letterInLoadRegisters_n = Pin(9, Pin.OUT, value=1)  # Load input pin (active low
 oledI2cScl      = Pin(5)            # I2C for OLED screen, Clock (SSD1306)
 oledI2cSda      = Pin(4)            # I2C for OLED screen, Data (SSD1306)
 onBoardLED      = Pin("LED", Pin.OUT) # PICO on board LED for debugging
-npPin           = Pin(14, Pin.OUT)  # GPIO14 to output to drive NeoPixels (digital output)
-buzzerPin       = Pin(22)           # GPIO22 to output to drive buzzer (digital output)
+npPin           = Pin(15, Pin.OUT)  # GPIO15 to output to drive NeoPixels (digital output)
+buzzerPin       = Pin(22, Pin.OUT)           # GPIO22 to output to drive buzzer (digital output)
 encoderClk      = 17                # GPIO number for rotary encoder Clock
 encoderDt       = 16                # GPIO number for rotary encoder Data
+rumble          = Pin(14, Pin.OUT, value=0)         # Pin to enable motor 
+powerDrainPin   = Pin(13, Pin.OUT, value=0)         # Pin to enable motor
 
 
 
@@ -69,10 +84,14 @@ letterIn = SPI(1, 400000, sck=letterInSck, mosi=letterInMosi, miso=letterInMiso)
 # oled screen
 oledI2c = I2C(0, scl=oledI2cScl, sda=oledI2cSda, freq=400_000)
 oled = ssd1306.SSD1306_I2C(128, 64, oledI2c, addr=0x3c) # 128 x 64 pixel, color: MONO_VLSB, I2C address: 0x3c
+clockWriter = Writer(oled, arial_50)
 # letterLEDs
 np = NeoPixel(npPin, len(letters)*2, bpp=3, timing=1)   # create NeoPixel driver for len(letters)*2 pixels, RGB colors
 # Buzzer (PWM)
-pwm0B = PWM(buzzerPin, freq=2000, duty_u16=0) # 50% duty cycle = duty_u16 = 32768, sound level peak frequency is 4000Hz. Initially turned off. 
+# pwm0B = PWM(buzzerPin, freq=2000, duty_u16=0) # 50% duty cycle = duty_u16 = 32768, sound level peak frequency is 4000Hz. Initially turned off.
+pwm0B = PWM(Pin(22))
+pwm0B.freq(2000)
+pwm0B.duty_u16(0)
 # rotary encoder
 encoder = RotaryIRQ(pin_num_clk=encoderClk, pin_num_dt=encoderDt, min_val=0, max_val=1000, reverse=False, range_mode=RotaryIRQ.RANGE_BOUNDED) # max time, set to 1000(seconds), can not make them negative
 #set start value to timeLeftReset
@@ -94,6 +113,15 @@ def updateTimeLeft(timer):
 # set clock to update time left - period: 1s = 1000ms
 clock.init(mode=Timer.PERIODIC, period=1000, callback=updateTimeLeft)
 
+powerDrainerTimer = Timer()
+def powerDrainFunction(timer):
+# Function to keep the USB power pack on by draining power. 
+    powerDrainPin.toggle()
+    onBoardLED.toggle()
+    
+# set powerdrain to update every 5s - period: 5s = 5000ms - 5s ON, 5s OFF
+powerDrainerTimer.init(mode=Timer.PERIODIC, period=5000, callback=powerDrainFunction)
+
 def getLevel():
     # returns the sum of the level pins x the levelMultiplier
     return lvl1.value()*levelMultiplier + lvl2.value()*2*levelMultiplier + lvl3.value()*3*levelMultiplier
@@ -104,12 +132,29 @@ def updateOledLevel(level):
     oled.text(f"KABOOM LEVEL {level}", 0, 0, 1) # write the new level
     oled.show()
 
+def beep(beepTime=0.5):
+    # single beep from the buzzer
+    pwm0B.duty_u16(32768)   # ON
+    sleep(beepTime)
+    pwm0B.duty_u16(0)       # OFF
+
 def updateOledTime():
     global timeLeft
+    global running
     # updates the timeLeft on the OLED screen
-    oled.fill_rect(0, 20, 128, 10, 0)           # erase the old number
-    oled.text(f"Tid: {timeLeft}", 0, 20, 1)     # write the new time
+    timeWidth = clockWriter.stringlen(f"{timeLeft}")
+    oled.fill_rect(0, clockYOffset, WIDTH, HEIGHT-clockYOffset, 0)
+    clockXOffsetExtra = int((clockMaxWidth - timeWidth)/2)
+    Writer.set_textpos(oled, 14, clockXOffset + clockXOffsetExtra)  # verbose = False to suppress console output
+    clockWriter.printstring(f"{timeLeft}")
     oled.show()
+    if running:
+        _thread.start_new_thread(beep, (0.05,))
+    
+#     
+#     oled.fill_rect(0, 20, 128, 10, 0)           # erase the old number
+#     oled.text(f"Tid: {timeLeft}", 0, 20, 1)     # write the new time
+#     oled.show()
 
 def initOled():
     # init the OLED screen with level and time + erase anything from noise during start-up
@@ -138,27 +183,26 @@ initOled()
 initLetterLEDs()
 initBuzzer()
 
-def beep(beepTime=0.5):
-    # single beep from the buzzer
-    pwm0B.duty_u16(32768)   # ON
-    sleep(beepTime)
-    pwm0B.duty_u16(0)       # OFF
-
 def ledBomb(defused):
     # light and color show for when the "bomb" goes off, or is defused
     if defused:
         color = GREEN
     else:
         color = RED
-    # TODO: turn on rumble
+        rumble.high()
     for i in range(0,10):
+        if i == 4 and not defused:
+            rumble.low()
+        if i == 6 and not defused:
+            rumble.high()
         np.fill(color)
         np.write()
         beep(0.5)
+        sleep(0.5)
         np.fill(OFF)
         np.write()
         sleep(0.5)
-        
+    rumble.low()
 
 
 def setLetterOut(level):
@@ -188,14 +232,15 @@ def setLetterOut(level):
     # go through all letters, light it up, and keep it lit if selected, otherwise turn it off again.
     for letter in letters:
         tempLED = lettersOutDict[letter][3] # get the neopixel address for the letter
-        # print(letter, tempLED)
+        print(letter, tempLED)
         np[tempLED] = RED                   # make it red
         np.write()                          # and show it
+        # sleep(0.2)
         if lettersOutDict[letter][2]:       # make a beep if the letter is selected
             beep(tempo)
         else:                               # if not selected, turn it off again before moving on
-            np[tempLED] = OFF
             sleep(tempo)
+            np[tempLED] = OFF
             np.write()
 
 def start():
@@ -210,7 +255,7 @@ def start():
     beep(0.4)
     sleep(0.2)
     return True
-##################################################################################################################################
+
 def reset():
     global timeLeft
     timeLeft = timeLeftReset
@@ -306,3 +351,5 @@ while True:
             ledBomb(True)
             reset()
         # print(running)
+
+    
