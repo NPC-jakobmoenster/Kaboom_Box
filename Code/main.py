@@ -26,7 +26,6 @@ RED     = (20,0,0)
 GREEN   = (0,10,0)
 BLUE    = (0,0,20)
 OFF     = (0,0,0)
-
 # dictionaries for out and input that hold the information on [letter byte, letter address, chosen/connected, neopixel adress]
 lettersOutDict = {"A":[3, 0x02, False, 0],  "B":[3, 0x04, False, 1],   "C":[3, 0x08, False, 2],   "D":[3, 0x10, False, 3],   "E":[3, 0x20, False, 4],  "F": [3, 0x40, False, 5],  "G": [3, 0x80, False, 6],  "H":[2, 0x01, False, 7],
                   "I":[2, 0x02, False, 8],  "J":[2, 0x04, False, 9],   "K":[2, 0x08, False, 10],  "L":[2, 0x10, False, 11],  "M":[2, 0x20, False, 12], "N": [2, 0x40, False, 13], "O": [2, 0x80, False, 14], "P":[1, 0x01, False, 15],
@@ -45,7 +44,7 @@ letterOutBuffer=bytearray(4)    # buffer to hold the output letter information t
 letterInBuffer=bytearray(4)     # buffer to hold the output letter information to write on SPI
 
 levelMultiplier = 1         # number of letters per level
-timeLeftReset = 10          # initial/reset timer
+timeLeftReset = 2          # initial/reset timer
 timeLeft = timeLeftReset    # seconds until the "bomb" goes off.
 running = False             # Flag for handling if the bomb is started or not.
 
@@ -190,7 +189,7 @@ def ledBomb(defused):
     else:
         color = RED
         rumble.high()
-    for i in range(0,10):
+    for i in range(0,100000):
         if i == 4 and not defused:
             rumble.low()
         if i == 6 and not defused:
