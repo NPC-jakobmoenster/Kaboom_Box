@@ -1,0 +1,9 @@
+cd "C:\Users\Jakob\Documents\Git\Kaboom_Box\KiCad" 
+
+kikit separate --source "annotation; ref: B101" Kaboom_box.kicad_pcb Kaboom_box_bottom.kicad_pcb
+kikit fab jlcpcb --assembly --schematic Kaboom_box.kicad_sch Kaboom_box_bottom.kicad_pcb "Production/bottom"
+
+kikit separate --source "annotation; ref: B102" Kaboom_box.kicad_pcb Kaboom_box_top.kicad_pcb
+kikit fab jlcpcb --assembly --schematic Kaboom_box.kicad_sch Kaboom_box_top.kicad_pcb "Production/top"
+
+JLC2KiCadLib -dir "C:\Users\Jakob\Documents\Git\Kaboom_Box\KiCad\lib"  
