@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8d340784-229e-46d1-990c-7f8852f9fc49")
 	(paper "A4")
 	(lib_symbols
@@ -103,42 +103,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "3"
@@ -149,24 +113,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1 1)
@@ -193,24 +139,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "7"
@@ -221,6 +149,78 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1 1)
@@ -247,16 +247,16 @@
 					)
 				)
 				(pin unspecified line
-					(at -7.62 -5.08 0)
+					(at 7.62 -5.08 180)
 					(length 2.54)
-					(name "9"
+					(name "10"
 						(effects
 							(font
 								(size 1 1)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1 1)
@@ -265,6 +265,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "PCM_kikit:Board"
 			(exclude_from_sim no)
@@ -350,7 +351,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "LED_DATA_BOT"
+		(exclude_from_sim no)
+		(at 187.96 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "766b32fc-8156-4dd1-9f2a-b5e7e5b77353")
+	)
+	(text "LED_DATA_LID"
+		(exclude_from_sim no)
+		(at 104.14 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfa0223d-51fb-4dce-8602-05cb79ee4067")
 	)
 	(junction
 		(at 153.67 90.17)
@@ -1632,31 +1656,8 @@
 		)
 		(uuid "fe82b178-1df8-4e4b-bc2c-05c2be7248ee")
 	)
-	(text "LED_DATA_BOT"
-		(exclude_from_sim no)
-		(at 187.96 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "766b32fc-8156-4dd1-9f2a-b5e7e5b77353")
-	)
-	(text "LED_DATA_LID"
-		(exclude_from_sim no)
-		(at 104.14 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfa0223d-51fb-4dce-8602-05cb79ee4067")
-	)
 	(label "I2C1_SDA_LID"
 		(at 104.14 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1667,7 +1668,6 @@
 	)
 	(label "I2C1_SDA_BOT"
 		(at 184.15 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1678,7 +1678,6 @@
 	)
 	(label "I2C_SCL_LID"
 		(at 104.14 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1689,7 +1688,6 @@
 	)
 	(label "SPI0_RX_LID"
 		(at 104.14 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1700,7 +1698,6 @@
 	)
 	(label "SPI0_SCK_LID"
 		(at 104.14 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1711,7 +1708,6 @@
 	)
 	(label "I2C_SCL_BOT"
 		(at 184.15 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1722,7 +1718,6 @@
 	)
 	(label "SPI0_TX_BOT"
 		(at 185.42 118.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1733,7 +1728,6 @@
 	)
 	(label "SPI0_TX_LID"
 		(at 104.14 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1744,7 +1738,6 @@
 	)
 	(label "SPI0_SCK_BOT"
 		(at 186.69 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1755,7 +1748,6 @@
 	)
 	(label "SPI0_CSn_BOT"
 		(at 186.69 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1766,7 +1758,6 @@
 	)
 	(label "SPI0_RX_BOT"
 		(at 185.42 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1777,7 +1768,6 @@
 	)
 	(label "SPI0_CSn_LID"
 		(at 104.14 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2535,6 +2525,10 @@
 	(sheet
 		(at 24.13 46.99)
 		(size 67.31 92.71)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2564,103 +2558,103 @@
 		)
 		(pin "GND" input
 			(at 91.44 134.62 0)
+			(uuid "3d2a4d5e-549a-4d4e-9524-a40b8091a7cb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3d2a4d5e-549a-4d4e-9524-a40b8091a7cb")
 		)
 		(pin "VDD" input
 			(at 91.44 129.54 0)
+			(uuid "68354648-949e-4646-9933-162f65bf7a84")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "68354648-949e-4646-9933-162f65bf7a84")
 		)
 		(pin "I2C1_SDA" input
 			(at 91.44 82.55 0)
+			(uuid "37af3823-97ed-4f86-b434-075952eb86eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "37af3823-97ed-4f86-b434-075952eb86eb")
 		)
 		(pin "I2C1_SCL" input
 			(at 91.44 85.09 0)
+			(uuid "037898c3-9ee6-4a80-a991-d1db73962366")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "037898c3-9ee6-4a80-a991-d1db73962366")
 		)
 		(pin "SPI1_RX" input
 			(at 91.44 110.49 0)
+			(uuid "6206f652-69e3-46ca-8685-b38702714c88")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6206f652-69e3-46ca-8685-b38702714c88")
 		)
 		(pin "SPI1_SCK" input
 			(at 91.44 115.57 0)
+			(uuid "7dabc887-2865-43ae-beda-0459d49fb3ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7dabc887-2865-43ae-beda-0459d49fb3ea")
 		)
 		(pin "SPI1_CSn" input
 			(at 91.44 113.03 0)
+			(uuid "fd591dc1-2924-47ff-8bf3-380125cd2a43")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fd591dc1-2924-47ff-8bf3-380125cd2a43")
 		)
 		(pin "LED_DATA_IN" input
 			(at 91.44 63.5 0)
+			(uuid "aa7e9a13-b1b1-461b-89b9-a83211eb3c3c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "aa7e9a13-b1b1-461b-89b9-a83211eb3c3c")
 		)
 		(pin "+3.3V_SHIFT" input
 			(at 91.44 107.95 0)
+			(uuid "b89aa4e9-ab0f-4982-84d1-7ddcc4f16bc5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b89aa4e9-ab0f-4982-84d1-7ddcc4f16bc5")
 		)
 		(pin "+3.3V_OLED" input
 			(at 91.44 80.01 0)
+			(uuid "1e1eae03-caeb-4484-86a3-1eba8beafcbe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1e1eae03-caeb-4484-86a3-1eba8beafcbe")
 		)
 		(instances
 			(project "Kaboom_box"
@@ -2673,6 +2667,10 @@
 	(sheet
 		(at 195.58 46.99)
 		(size 67.31 92.71)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2702,103 +2700,103 @@
 		)
 		(pin "GND" input
 			(at 195.58 137.16 180)
+			(uuid "829323e7-be77-4974-a238-edcab6dd89e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "829323e7-be77-4974-a238-edcab6dd89e5")
 		)
 		(pin "+3.3V" input
 			(at 195.58 134.62 180)
+			(uuid "5331de1b-9ff7-4c93-b0eb-c1d22fa1b8b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5331de1b-9ff7-4c93-b0eb-c1d22fa1b8b4")
 		)
 		(pin "VDD" input
 			(at 195.58 132.08 180)
+			(uuid "ebac65e1-af63-41a3-ab04-47b48f73e093")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ebac65e1-af63-41a3-ab04-47b48f73e093")
 		)
 		(pin "LED_DATA_OUT" input
 			(at 195.58 63.5 180)
+			(uuid "3fcebd78-2f4e-42c9-be31-1795608552eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3fcebd78-2f4e-42c9-be31-1795608552eb")
 		)
 		(pin "I2C1_SDA" input
 			(at 195.58 82.55 180)
+			(uuid "751c02ed-b6f6-4582-adbf-7e93b4d18208")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "751c02ed-b6f6-4582-adbf-7e93b4d18208")
 		)
 		(pin "I2C1_SCL" input
 			(at 195.58 85.09 180)
+			(uuid "bef6d58d-14a5-456e-8928-b88309f065f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bef6d58d-14a5-456e-8928-b88309f065f8")
 		)
 		(pin "SPI_CSn_BOT" input
 			(at 195.58 113.03 180)
+			(uuid "a0cefe00-0116-4b69-9d44-8102b0a257b9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a0cefe00-0116-4b69-9d44-8102b0a257b9")
 		)
 		(pin "SPI_RX_BOT" input
 			(at 195.58 110.49 180)
+			(uuid "bb1f510b-0496-4bb8-b401-dd4e39df26c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bb1f510b-0496-4bb8-b401-dd4e39df26c0")
 		)
 		(pin "SPI_SCK_BOT" input
 			(at 195.58 115.57 180)
+			(uuid "eb983c9b-d030-49e3-8702-daae65560c7c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "eb983c9b-d030-49e3-8702-daae65560c7c")
 		)
 		(pin "SPI_TX_BOT" input
 			(at 195.58 118.11 180)
+			(uuid "ce9ecda1-0c1a-473c-8350-b6a622b58b50")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ce9ecda1-0c1a-473c-8350-b6a622b58b50")
 		)
 		(instances
 			(project "Kaboom_box"
@@ -2813,4 +2811,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

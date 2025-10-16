@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "1abeeb6b-b450-41e0-bfed-1f86c5ec44ac")
 	(paper "A4")
 	(lib_symbols
 		(symbol "0603WAF100JT5E:0603WAF100JT5E"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -122,9 +124,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "0603WAF2000T5E:0603WAF2000T5E"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -240,9 +245,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CL10B102KB8NNNC:CL10B102KB8NNNC"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -336,7 +344,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 0) (xy 1.27 0)
+						(xy 0.508 2.032) (xy 0.508 -2.032)
 					)
 					(stroke
 						(width 0)
@@ -348,7 +356,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 2.032) (xy 0.508 -2.032)
+						(xy 0.508 0) (xy 1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -395,9 +403,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "KT-0603R:KT-0603R"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -467,6 +478,30 @@
 			(symbol "KT-0603R_0_1"
 				(polyline
 					(pts
+						(xy -3.81 3.302) (xy -2.794 2.794) (xy -3.302 2.286) (xy -3.81 3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 4.318) (xy -1.778 3.81) (xy -2.286 3.302) (xy -2.794 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
 						(xy -2.032 1.524) (xy -3.81 3.302)
 					)
 					(stroke
@@ -499,30 +534,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.302) (xy -2.794 2.794) (xy -3.302 2.286) (xy -3.81 3.302)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.794 4.318) (xy -1.778 3.81) (xy -2.286 3.302) (xy -2.794 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 				(polyline
@@ -574,9 +585,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MT-0-103-F001-T000-RS+PJ:MT-0-103-F001-T000-RS+PJ"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -703,18 +717,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 -1.778) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(circle
 					(center 0 1.524)
 					(radius 0.508)
@@ -735,6 +737,18 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.778) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin unspecified line
@@ -792,6 +806,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1121,7 +1136,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 130.81 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1133,7 +1147,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 133.35 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1145,7 +1158,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 152.4 109.22 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1157,7 +1169,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 130.81 120.65 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1169,7 +1180,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 149.86 146.05 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1181,7 +1191,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 149.86 71.12 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1193,7 +1202,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 133.35 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1205,7 +1213,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 130.81 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1217,7 +1224,6 @@
 	(hierarchical_label "LVL1"
 		(shape output)
 		(at 179.07 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1229,7 +1235,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 130.81 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1241,7 +1246,6 @@
 	(hierarchical_label "LVL2"
 		(shape output)
 		(at 181.61 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1253,7 +1257,6 @@
 	(hierarchical_label "LVL3"
 		(shape output)
 		(at 179.07 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

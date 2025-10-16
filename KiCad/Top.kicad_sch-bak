@@ -623,6 +623,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 123.19) (xy 96.52 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2057a5d2-1987-407f-8be5-ac66e043d48c")
+	)
+	(wire
+		(pts
 			(xy 93.98 91.44) (xy 96.52 91.44)
 		)
 		(stroke
@@ -633,7 +643,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 58.42) (xy 102.87 58.42)
+			(xy 93.98 135.89) (xy 96.52 135.89)
 		)
 		(stroke
 			(width 0)
@@ -693,7 +703,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 55.88) (xy 102.87 55.88)
+			(xy 93.98 133.35) (xy 96.52 133.35)
 		)
 		(stroke
 			(width 0)
@@ -722,9 +732,20 @@
 		)
 		(uuid "051e6d73-c6af-424d-af8a-99798577e34c")
 	)
+	(hierarchical_label "LED_DATA_IN"
+		(shape input)
+		(at 96.52 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07f8b7d2-1f6c-4806-9601-64d6ba081c8a")
+	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 102.87 55.88 0)
+		(at 96.52 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -812,7 +833,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 102.87 58.42 0)
+		(at 96.52 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1364,6 +1385,88 @@
 		)
 	)
 	(sheet
+		(at 64.77 118.11)
+		(size 29.21 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9bfa82dd-1a39-4059-a6f6-1dd7b3bd567a")
+		(property "Sheetname" "LEDs Sheet1"
+			(at 64.77 117.3984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 64.77 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_DATA_OUT" input
+			(at 93.98 125.73 0)
+			(uuid "0f553212-840c-481c-9f0d-8a3f901d24af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VDD" input
+			(at 93.98 133.35 0)
+			(uuid "665a2000-2f2e-48d4-979b-8ebc6f46e20a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 93.98 135.89 0)
+			(uuid "5094a821-9cbe-40d0-a9bf-dd9fb4a9e53c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_DATA_IN" input
+			(at 93.98 123.19 0)
+			(uuid "8b7ad028-342b-42d1-9d4b-2d4d732719f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Kaboom_box"
+				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/c9ccc42e-41d9-40f0-918f-9c4b4cc23369"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 64.77 82.55)
 		(size 29.21 24.13)
 		(exclude_from_sim no)
@@ -1451,126 +1554,6 @@
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/c9ccc42e-41d9-40f0-918f-9c4b4cc23369"
 					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 63.5 41.91)
-		(size 30.48 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d149dbf1-9a26-42e3-b01c-677850c1f9a6")
-		(property "Sheetname" "LEDs_Bottom"
-			(at 63.5 41.1984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "LEDs_bottom.kicad_sch"
-			(at 63.5 67.8946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Field2" ""
-			(at 63.5 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "+3.3V" input
-			(at 63.5 46.99 180)
-			(uuid "fa33e5fd-8377-4c3b-8bc4-d2147f472b5b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GND" input
-			(at 63.5 63.5 180)
-			(uuid "25cc3ae0-e88f-4fbf-9c51-1d1bd516398a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SER_EN_OUTn" input
-			(at 93.98 58.42 0)
-			(uuid "283512be-7c14-49b7-bdd1-becde2cd2244")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SER_RESET" input
-			(at 93.98 63.5 0)
-			(uuid "899f544a-539f-4228-944a-0d919cc46334")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SER_SCK" input
-			(at 93.98 60.96 0)
-			(uuid "ae8ce24f-455c-4a0d-a2b4-37e48cabef16")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SER_DATA_IN_0" input
-			(at 93.98 46.99 0)
-			(uuid "cf0f414b-2d1e-4c06-8153-1d3e3cdcec95")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SER_DATA_OUT_4" input
-			(at 93.98 49.53 0)
-			(uuid "a1ecac12-1027-4f35-8df8-53c4fb449542")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Kaboom_box"
-				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/c9ccc42e-41d9-40f0-918f-9c4b4cc23369"
-					(page "10")
 				)
 			)
 		)

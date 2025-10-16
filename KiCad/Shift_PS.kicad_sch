@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "9d0942db-6e28-4e69-b51e-0b405e593941")
 	(paper "A4")
 	(lib_symbols
 		(symbol "0603WAF1202T5E:0603WAF1202T5E"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -122,6 +124,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "74HC165D,653:74HC165D,653"
 			(exclude_from_sim no)
@@ -224,132 +227,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 -6.35 180)
-					(length 2.54)
-					(name "DS"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 -3.81 180)
-					(length 2.54)
-					(name "D0"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 -1.27 180)
-					(length 2.54)
-					(name "D1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 1.27 180)
-					(length 2.54)
-					(name "D2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 3.81 180)
-					(length 2.54)
-					(name "D3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 6.35 180)
-					(length 2.54)
-					(name "CE#"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 8.89 180)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "16"
 						(effects
 							(font
 								(size 1 1)
@@ -484,6 +361,132 @@
 					)
 				)
 				(pin unspecified line
+					(at 8.89 8.89 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 6.35 180)
+					(length 2.54)
+					(name "CE#"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "D3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "D2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "D1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "D0"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -6.35 180)
+					(length 2.54)
+					(name "DS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin unspecified line
 					(at 8.89 -8.89 180)
 					(length 2.54)
 					(name "Q7"
@@ -502,9 +505,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CC0603KRX7R9BB104:CC0603KRX7R9BB104"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -574,7 +580,7 @@
 			(symbol "CC0603KRX7R9BB104_0_1"
 				(polyline
 					(pts
-						(xy -0.508 -2.032) (xy -0.508 2.032)
+						(xy -0.508 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -586,7 +592,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 0) (xy -2.54 0)
+						(xy -0.508 -2.032) (xy -0.508 2.032)
 					)
 					(stroke
 						(width 0)
@@ -657,10 +663,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Kaboom_box:2mm_clamp"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -727,17 +736,6 @@
 			)
 			(symbol "2mm_clamp_1_1"
 				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -1.27)
 					(stroke
@@ -746,6 +744,17 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -767,6 +776,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(wire
@@ -1661,7 +1671,6 @@
 	)
 	(label "J151"
 		(at 49.53 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1672,7 +1681,6 @@
 	)
 	(label "J145"
 		(at 199.39 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1683,7 +1691,6 @@
 	)
 	(label "J157"
 		(at 101.6 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1694,7 +1701,6 @@
 	)
 	(label "J141"
 		(at 142.24 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1705,7 +1711,6 @@
 	)
 	(label "J157"
 		(at 115.57 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1716,7 +1721,6 @@
 	)
 	(label "J138"
 		(at 100.33 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1727,7 +1731,6 @@
 	)
 	(label "J130"
 		(at 67.31 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1738,7 +1741,6 @@
 	)
 	(label "J147"
 		(at 36.83 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1749,7 +1751,6 @@
 	)
 	(label "J153"
 		(at 49.53 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1760,7 +1761,6 @@
 	)
 	(label "SER_IN_1"
 		(at 139.7 175.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1771,7 +1771,6 @@
 	)
 	(label "J132"
 		(at 142.24 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1782,7 +1781,6 @@
 	)
 	(label "J152"
 		(at 49.53 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1793,7 +1791,6 @@
 	)
 	(label "J155"
 		(at 36.83 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1804,7 +1801,6 @@
 	)
 	(label "J144"
 		(at 149.86 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1815,7 +1811,6 @@
 	)
 	(label "J143"
 		(at 149.86 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1826,7 +1821,6 @@
 	)
 	(label "J141"
 		(at 149.86 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1837,7 +1831,6 @@
 	)
 	(label "SER_IN_1"
 		(at 64.77 173.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1848,7 +1841,6 @@
 	)
 	(label "J146"
 		(at 199.39 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1859,7 +1851,6 @@
 	)
 	(label "J160"
 		(at 111.76 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1870,7 +1861,6 @@
 	)
 	(label "J138"
 		(at 67.31 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1881,7 +1871,6 @@
 	)
 	(label "J137"
 		(at 140.97 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1892,7 +1881,6 @@
 	)
 	(label "J161"
 		(at 111.76 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1903,7 +1891,6 @@
 	)
 	(label "J143"
 		(at 64.77 171.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1914,7 +1901,6 @@
 	)
 	(label "J136"
 		(at 100.33 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1925,7 +1911,6 @@
 	)
 	(label "J153"
 		(at 111.76 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1936,7 +1921,6 @@
 	)
 	(label "J140"
 		(at 149.86 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1947,7 +1931,6 @@
 	)
 	(label "J145"
 		(at 140.97 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1958,7 +1941,6 @@
 	)
 	(label "J132"
 		(at 50.8 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1969,7 +1951,6 @@
 	)
 	(label "J139"
 		(at 100.33 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1980,7 +1961,6 @@
 	)
 	(label "J133"
 		(at 50.8 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1991,7 +1971,6 @@
 	)
 	(label "J131"
 		(at 67.31 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2002,7 +1981,6 @@
 	)
 	(label "J142"
 		(at 149.86 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2013,7 +1991,6 @@
 	)
 	(label "SER_IN_2"
 		(at 64.77 176.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2024,7 +2001,6 @@
 	)
 	(label "J140"
 		(at 142.24 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2035,7 +2011,6 @@
 	)
 	(label "J150"
 		(at 38.1 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2046,7 +2021,6 @@
 	)
 	(label "J136"
 		(at 140.97 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2057,7 +2031,6 @@
 	)
 	(label "J135"
 		(at 100.33 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2068,7 +2041,6 @@
 	)
 	(label "J135"
 		(at 64.77 168.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2079,7 +2051,6 @@
 	)
 	(label "J142"
 		(at 64.77 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2090,7 +2061,6 @@
 	)
 	(label "J159"
 		(at 38.1 168.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2101,7 +2071,6 @@
 	)
 	(label "J152"
 		(at 111.76 162.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2112,7 +2081,6 @@
 	)
 	(label "J133"
 		(at 142.24 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2123,7 +2091,6 @@
 	)
 	(label "J156"
 		(at 101.6 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2134,7 +2101,6 @@
 	)
 	(label "SER_IN_3"
 		(at 66.04 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2145,7 +2111,6 @@
 	)
 	(label "J134"
 		(at 50.8 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2156,7 +2121,6 @@
 	)
 	(label "J134"
 		(at 64.77 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2167,7 +2131,6 @@
 	)
 	(label "J154"
 		(at 36.83 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2178,7 +2141,6 @@
 	)
 	(label "J130"
 		(at 50.8 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2189,7 +2151,6 @@
 	)
 	(label "J151"
 		(at 38.1 171.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2200,7 +2161,6 @@
 	)
 	(label "J148"
 		(at 115.57 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2211,7 +2171,6 @@
 	)
 	(label "J137"
 		(at 100.33 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2222,7 +2181,6 @@
 	)
 	(label "J139"
 		(at 67.31 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2233,7 +2191,6 @@
 	)
 	(label "SER_IN_2"
 		(at 142.24 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2244,7 +2201,6 @@
 	)
 	(label "J131"
 		(at 50.8 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2255,7 +2211,6 @@
 	)
 	(label "J158"
 		(at 38.1 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2266,7 +2221,6 @@
 	)
 	(label "J155"
 		(at 101.6 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2277,7 +2231,6 @@
 	)
 	(label "J147"
 		(at 199.39 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2288,7 +2241,6 @@
 	)
 	(label "J146"
 		(at 36.83 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2299,7 +2251,6 @@
 	)
 	(label "J149"
 		(at 115.57 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2310,7 +2261,6 @@
 	)
 	(label "J150"
 		(at 49.53 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2321,7 +2271,6 @@
 	)
 	(label "J144"
 		(at 140.97 162.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2332,7 +2281,6 @@
 	)
 	(label "SER_IN_3"
 		(at 142.24 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2343,7 +2291,6 @@
 	)
 	(label "J148"
 		(at 199.39 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2354,7 +2301,6 @@
 	)
 	(label "J156"
 		(at 115.57 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2365,7 +2311,6 @@
 	)
 	(label "J158"
 		(at 101.6 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2376,7 +2321,6 @@
 	)
 	(label "J149"
 		(at 199.39 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2387,7 +2331,6 @@
 	)
 	(label "J154"
 		(at 49.53 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2399,7 +2342,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 69.85 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2411,7 +2353,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 139.7 154.94 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2423,7 +2364,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 138.43 160.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2435,7 +2375,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 68.58 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2447,7 +2386,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 119.38 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2459,7 +2397,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 168.91 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2471,7 +2408,6 @@
 	(hierarchical_label "SER_LOAD"
 		(shape input)
 		(at 109.22 157.48 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2483,7 +2419,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 218.44 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2495,7 +2430,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 218.44 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2507,7 +2441,6 @@
 	(hierarchical_label "SER_CLK"
 		(shape input)
 		(at 34.29 161.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2519,7 +2452,6 @@
 	(hierarchical_label "SER_LOAD"
 		(shape input)
 		(at 34.29 158.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2531,7 +2463,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 63.5 161.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2543,7 +2474,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 66.04 109.22 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2555,7 +2485,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 119.38 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2567,7 +2496,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 45.72 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2579,7 +2507,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 120.65 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2591,7 +2518,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 64.77 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2603,7 +2529,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 58.42 187.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2615,7 +2540,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 125.73 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2627,7 +2551,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 59.69 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2639,7 +2562,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 69.85 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2651,7 +2573,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 49.53 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2663,7 +2584,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 69.85 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2675,7 +2595,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 168.91 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2687,7 +2606,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 168.91 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2699,7 +2617,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 68.58 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2711,7 +2628,6 @@
 	(hierarchical_label "SER_CLK"
 		(shape input)
 		(at 111.76 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2723,7 +2639,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 218.44 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2735,7 +2650,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 168.91 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2747,7 +2661,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 68.58 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2759,7 +2672,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 120.65 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2771,7 +2683,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 218.44 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2783,7 +2694,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 218.44 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2795,7 +2705,6 @@
 	(hierarchical_label "SER_CLK"
 		(shape input)
 		(at 35.56 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2807,7 +2716,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 121.92 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2819,7 +2727,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 119.38 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2831,7 +2738,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 120.65 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2843,7 +2749,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 68.58 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2855,7 +2760,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 120.65 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2867,7 +2771,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 64.77 156.21 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2879,7 +2782,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 68.58 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2891,7 +2793,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 119.38 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2903,7 +2804,6 @@
 	(hierarchical_label "SER_LOAD"
 		(shape input)
 		(at 35.56 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2915,7 +2815,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 119.38 175.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2927,7 +2826,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 142.24 109.22 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2939,7 +2837,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 69.85 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2951,7 +2848,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 69.85 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2963,7 +2859,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 168.91 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2975,7 +2870,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 48.26 187.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2987,7 +2881,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 120.65 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2999,7 +2892,6 @@
 	(hierarchical_label "+3.3V"
 		(shape input)
 		(at 123.19 186.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3011,7 +2903,6 @@
 	(hierarchical_label "SER_CLK"
 		(shape input)
 		(at 109.22 160.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3023,7 +2914,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 135.89 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3035,7 +2925,6 @@
 	(hierarchical_label "SER_OUT"
 		(shape input)
 		(at 76.2 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3047,7 +2936,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 133.35 186.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3059,7 +2947,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 140.97 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3071,7 +2958,6 @@
 	(hierarchical_label "SER_LOAD"
 		(shape input)
 		(at 111.76 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3083,7 +2969,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 44.45 176.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

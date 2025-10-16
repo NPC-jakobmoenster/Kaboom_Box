@@ -37,4 +37,5 @@
   (lib (name "ZL-YDW1207-4005PA-7_5")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/ZL-YDW1207-4005PA-7_5.kicad_sym")(options "")(descr ""))
   (lib (name "PCF8563T_5,518")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/PCF8563T_5,518.kicad_sym")(options "")(descr ""))
   (lib (name "Q13FC1350000400")(type "KiCad")(uri "${KIPRJMOD}/lib/symbol/Q13FC1350000400.kicad_sym")(options "")(descr ""))
+  (lib (name "JLC")(type "KiCad")(uri "${KIPRJMOD}/JLC2KiCad_lib/symbol/default_lib.kicad_sym")(options "")(descr ""))
 )
