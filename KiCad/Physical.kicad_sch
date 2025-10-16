@@ -2060,7 +2060,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a8d9442-c832-4ae2-8aee-57d50de63b15")
-		(property "Reference" "R160"
+		(property "Reference" "R162"
 			(at 205.486 80.518 0)
 			(effects
 				(font
@@ -2123,7 +2123,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "R160")
+					(reference "R162")
 					(unit 1)
 				)
 			)
@@ -2139,7 +2139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "209615ae-d0bf-4fd3-81ec-161d3758b1c7")
-		(property "Reference" "R155"
+		(property "Reference" "R159"
 			(at 104.14 93.98 0)
 			(effects
 				(font
@@ -2202,7 +2202,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "R155")
+					(reference "R159")
 					(unit 1)
 				)
 			)
@@ -2217,7 +2217,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a19a67d-388e-413f-b669-753a08a8e2da")
-		(property "Reference" "LED105"
+		(property "Reference" "LED107"
 			(at 105.41 59.436 0)
 			(effects
 				(font
@@ -2282,7 +2282,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "LED105")
+					(reference "LED107")
 					(unit 1)
 				)
 			)
@@ -2298,7 +2298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b06ecdb-9460-4e03-8bf9-e16381d165b1")
-		(property "Reference" "R120"
+		(property "Reference" "R161"
 			(at 196.85 93.98 0)
 			(effects
 				(font
@@ -2361,7 +2361,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "R120")
+					(reference "R161")
 					(unit 1)
 				)
 			)
@@ -2376,7 +2376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c4cdd5d-7a30-4cea-a6f7-096f31b077bd")
-		(property "Reference" "U149"
+		(property "Reference" "U125"
 			(at 184.404 60.452 0)
 			(effects
 				(font
@@ -2442,7 +2442,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "U149")
+					(reference "U125")
 					(unit 1)
 				)
 			)
@@ -2457,7 +2457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "959d746f-e084-4d7d-8292-0a4034b5e26f")
-		(property "Reference" "LED104"
+		(property "Reference" "LED108"
 			(at 191.77 78.486 0)
 			(effects
 				(font
@@ -2522,7 +2522,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "LED104")
+					(reference "LED108")
 					(unit 1)
 				)
 			)
@@ -2538,7 +2538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aeb76309-433e-459a-8f85-8309df2c5edc")
-		(property "Reference" "R113"
+		(property "Reference" "R158"
 			(at 93.98 86.36 90)
 			(effects
 				(font
@@ -2603,7 +2603,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "R113")
+					(reference "R158")
 					(unit 1)
 				)
 			)
@@ -2618,7 +2618,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4dfe7bc-c2f5-4d70-ba1d-f716719ca157")
-		(property "Reference" "U183"
+		(property "Reference" "U123"
 			(at 91.694 52.832 0)
 			(effects
 				(font
@@ -2684,7 +2684,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "U183")
+					(reference "U123")
 					(unit 1)
 				)
 			)
@@ -2701,7 +2701,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8d7197d-5a66-4941-a538-3d477571fb66")
-		(property "Reference" "U106"
+		(property "Reference" "U124"
 			(at 86.36 99.06 0)
 			(effects
 				(font
@@ -2769,7 +2769,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "U106")
+					(reference "U124")
 					(unit 1)
 				)
 			)
@@ -2864,7 +2864,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5212f32-f38a-448c-bd4d-37783847a211")
-		(property "Reference" "R161"
+		(property "Reference" "R160"
 			(at 119.126 61.468 0)
 			(effects
 				(font
@@ -2927,7 +2927,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "R161")
+					(reference "R160")
 					(unit 1)
 				)
 			)
@@ -2944,7 +2944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe815623-ae0b-4de8-8fc8-97d0ce0b1b07")
-		(property "Reference" "U181"
+		(property "Reference" "U126"
 			(at 179.07 99.06 0)
 			(effects
 				(font
@@ -3012,7 +3012,7 @@
 		(instances
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/683188d6-6efb-4f29-934c-2bc96d97ffe7"
-					(reference "U181")
+					(reference "U126")
 					(unit 1)
 				)
 			)
