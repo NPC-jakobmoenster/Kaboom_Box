@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "0eceec97-99b1-4b66-bf43-c5098845a8c4")
 	(paper "A4")
 	(lib_symbols)
@@ -1368,11 +1368,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1dd9c2a7-17e6-440b-8cc2-3eae8574d26a")
 		(property "Sheetname" "LEDS_discreet8"
 			(at 109.22 135.1784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1382,6 +1384,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 109.22 174.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,11 +1497,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "22d011ec-1113-406d-876d-a081a5175d9e")
 		(property "Sheetname" "LEDS_discreet4"
 			(at 21.59 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1507,6 +1513,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 21.59 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1618,11 +1626,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "28ae8220-6e8a-4e75-a248-9d8a9e41364f")
 		(property "Sheetname" "LEDS_discreet5"
 			(at 109.22 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1632,6 +1642,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 109.22 117.4246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1743,11 +1755,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "31ca2a23-70ae-4cac-974e-f95bb58b082e")
 		(property "Sheetname" "LEDS_discreet7"
 			(at 22.86 135.1784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,6 +1771,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 22.86 174.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,11 +1884,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "3bad8c18-db47-4d7c-89c0-8fe6a9b0d3da")
 		(property "Sheetname" "LEDS_discreet3"
 			(at 196.85 23.4184 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,6 +1900,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 196.85 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,11 +2013,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4bec9528-bca5-4f0d-9251-896ba489b04b")
 		(property "Sheetname" "LEDS_discreet2"
 			(at 109.22 23.4184 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2007,6 +2029,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 109.22 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2118,11 +2142,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "99191415-488e-4cc2-a24d-27b4fd2184bd")
 		(property "Sheetname" "LEDS_discreet6"
 			(at 196.85 78.0284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,6 +2158,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 196.85 117.4246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2243,11 +2271,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b071910c-bcd9-4761-9de0-e1ac1a7a4f27")
 		(property "Sheetname" "LEDS_discreet"
 			(at 21.59 22.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,6 +2287,8 @@
 		)
 		(property "Sheetfile" "LEDS_discreet.kicad_sch"
 			(at 21.59 61.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2348,6 +2380,9 @@
 			(project "Kaboom_box"
 				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/d111de2c-3c3c-486e-8c4b-bd3963817676/bc8d3d6f-6b9c-44e9-b136-d1971e21dcf6"
 					(page "3")
+				)
+				(path "/8d340784-229e-46d1-990c-7f8852f9fc49/c9ccc42e-41d9-40f0-918f-9c4b4cc23369/d149dbf1-9a26-42e3-b01c-677850c1f9a6"
+					(page "88")
 				)
 			)
 		)
